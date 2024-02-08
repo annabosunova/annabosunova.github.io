@@ -1,0 +1,71 @@
+body{
+    margin: 10px;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+}
+body h1 {
+    font-size: 60px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    font-size: 30px;
+    color: rgb(240, 234, 245);
+}
+
+#menu{
+    float: right;
+    color: lightgray;
+    background-color:   #19171a;
+    padding: 10px;
+}
+/* Change default behavior of visited links */
+#menu a:link,
+#menu a:visited {
+    color: lightgray;
+    text-decoration: none; 
+}
+
+#home-section {
+margin: 300px;
+}
+#home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.image {
+    flex: 1;
+    text-align: right;
+}
+.image img {
+    max-width: 80%; 
+    height: auto; 
+}
+#about-section {
+    margin-left: 500px;
+}
+
+#skills-section {
+    margin-top: 400px;
+    margin-left: 500px;
+}
+#skills-section ul{
+    color: #afacb0;
+}
+#portfolio-section {
+    margin-top: 400px;
+}
+
+#contact-section {
+    margin-top: 400px;
+}
