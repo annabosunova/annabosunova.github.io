@@ -1,104 +1,133 @@
-body{
-    background-color: #1A1A1D;
-    color: #d0d1d3;
-    font-size: 1.5em;
+body {
+  background-color: #1A1A1D;
+  color: #d0d1d3;
+  font-size: 30px;
 
 }
+
 body h1 {
-    font-size: 3.5rem;
+  font-size: 3.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
 }
+
 body h3 {
-    font-size: 3rem;
-    color:#C3073F;
+  font-size: 2.5rem; 
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #C3073F;
 }
 
 
 .menu {
-    display: flex;
-    justify-content: center;
-    list-style: none; /* Remove bullet points */
-    padding: 0; 
-    background-color: #1A1A1D;
-    z-index: 1000;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  /* Remove bullet points */
+  padding: 0;
+  background-color: #1A1A1D;
+  z-index: 1000;
 
 }
 
 .menu li {
-    margin-right: 2%;
+  margin-right: 2%;
 }
 
 /* Change default behavior of visited links */
 .menu a:link,
 .menu a:visited {
-    color: #BBBB;
-    text-decoration: none; 
+  color: #BBBB;
+  text-decoration: none;
 }
 
 
 #home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#about, #portfolio, #contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#about,
+#portfolio,
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
 }
 
 .image img {
-    max-width: 80%; 
-    height: auto; 
+  max-width: 50%;
+  height: auto;
 }
 
 #skills-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 100px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5%;
+  gap: 2.5vh;
+}
+
+.skill-card {
+  height: 15vw;
+  width: 15vw;
+  background-color: #6F2232;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5vh;
+  transition: all ease 0.5s;
+}
+
+.skill-card:hover {
+  background-color: #C3073F;
+}
+
+.skill-card img {
+  height: 25%;
+  width: 25%;
+  object-fit: contain;
+}
+
+.skill-card h2 {
+  font-size: 0.8em;
+  font-weight: 400;
+  color: #fbfbfb;
+}
+
+@media only screen and (max-width: 550px) {
+  body {
+    font-size: 1em;
   }
-    
-  .cards {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content:center;
-    margin-top: 5%;
-    gap: 2.5vh;
+  body p {
+    font-size: 0.4rem;
   }
-  
-  .skill-card {
-    height: 15vw;
-    width: 15vw;
-    background-color: #6F2232;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    align-items: center;
-    justify-content: center;
-    gap: 2.5vh;
-    transition: all ease 0.5s;
+
+  body h1 {
+    font-size: 1.2rem;
   }
-  
-  .skill-card:hover {
-    background-color: #C3073F;
+
+  body h3 {
+    font-size: 0.8rem;
   }
-  
-  .skill-card img {
-    height: 25%;
-    width: 25%;
-    object-fit: contain;
-  }
-  
+
   .skill-card h2 {
-    font-size: 24px;
-    font-weight: 400;
-    color: #fbfbfb;
+    font-size: 0.8em;
   }
-  
+
+}
