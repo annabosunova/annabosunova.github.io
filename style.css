@@ -5,16 +5,20 @@ body {
 
 }
 
-body h1 {
-  font-size: 3.5rem;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: 500;
+h1 {
+  font-size: clamp(1rem, 5vw, 3.5rem);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
 }
 
-body h3 {
-  font-size: 2.5rem; 
+h3 {
+  font-size: clamp(0.8rem, 3vw, 2.5rem);
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: #C3073F;
+}
+
+p {
+  font-size: clamp(0.8rem, 2vw, 1.5rem);
 }
 
 
