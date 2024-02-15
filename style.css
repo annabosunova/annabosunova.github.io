@@ -1,71 +1,104 @@
 body{
-    margin: 10px;
-    background-color: black;
-    color: white;
-    font-size: 25px;
+    background-color: #1A1A1D;
+    color: #d0d1d3;
+    font-size: 1.5em;
+
 }
 body h1 {
-    font-size: 60px;
+    font-size: 3.5rem;
 }
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; 
-    font-size: 30px;
-    color: rgb(240, 234, 245);
+body h3 {
+    font-size: 3rem;
+    color:#C3073F;
 }
 
-#menu{
-    float: right;
-    color: lightgray;
-    background-color:   #19171a;
-    padding: 10px;
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none; /* Remove bullet points */
+    padding: 0; 
+    background-color: #1A1A1D;
+    z-index: 1000;
+
 }
+
+.menu li {
+    margin-right: 2%;
+}
+
 /* Change default behavior of visited links */
-#menu a:link,
-#menu a:visited {
-    color: lightgray;
+.menu a:link,
+.menu a:visited {
+    color: #BBBB;
     text-decoration: none; 
 }
 
-#home-section {
-margin: 300px;
-}
+
 #home {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
-.content {
-    flex: 1;
-    padding-right: 20px;
+
+#about, #portfolio, #contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.image {
-    flex: 1;
-    text-align: right;
-}
 .image img {
     max-width: 80%; 
     height: auto; 
 }
-#about-section {
-    margin-left: 500px;
-}
 
 #skills-section {
-    margin-top: 400px;
-    margin-left: 500px;
-}
-#skills-section ul{
-    color: #afacb0;
-}
-#portfolio-section {
-    margin-top: 400px;
-}
-
-#contact-section {
-    margin-top: 400px;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 100px;
+  }
+    
+  .cards {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-top: 5%;
+    gap: 2.5vh;
+  }
+  
+  .skill-card {
+    height: 15vw;
+    width: 15vw;
+    background-color: #6F2232;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5vh;
+    transition: all ease 0.5s;
+  }
+  
+  .skill-card:hover {
+    background-color: #C3073F;
+  }
+  
+  .skill-card img {
+    height: 25%;
+    width: 25%;
+    object-fit: contain;
+  }
+  
+  .skill-card h2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #fbfbfb;
+  }
+  

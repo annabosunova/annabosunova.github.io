@@ -17,13 +17,14 @@
         <!--Navigation tag used for navigation through the page.
         Contains links to different page sections-->
         <nav>
-            <div id="menu">
-                <a href="#home-section">Home</a> |
-                <a href="#about-section">About</a> |
-                <a href="#skills-section">Skills</a> |
-                <a href="#portfolio-section">Portfolio</a> |
-                <a href="#contact-section">Contact</a>
-            </div>
+            <ul class="menu">
+                <li><a href="#home-section">Home</a> </li>
+                <li><a href="#about-section">About</a> </li>
+                <li><a href="#skills-section">Skills</a>  </li>
+                <li> <a href="#portfolio-section">Projects</a> </li>
+                <li> <a href="#contact-section">Contact</a></li>
+            
+            </ul>
         </nav>
     </header>
     <!--Home Section-->
@@ -44,31 +45,69 @@
     <!--About Section-->
     <section id="about-section">
         <div id="about">
-            <h1>About section</h1>
-            <p> I'm senior at UMass Boston! </p>
+            <h1>About me</h1>
+            <p> I live in Boston! <br>
+                I am a senior at University of Massachusetts Boston majoring in Computer Science. <br>
+                Passionate about software development, technologies and business.
+            </p>
         </div>
     </section>
     <!--Skills Section-->
     <section id="skills-section">
-        <div id="skills">
-            <h1>My skills</h1>
-            <ul>
-                <li>Java</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>C/C++</li>
-                <li>Racket</li>
-
-
-            </ul>
-        </div>
+        <h1>Skillset</h1>
+            <div class="cards">
+                <div class="skill-card">
+                    <img src="imgs/skills/python.svg" alt="">
+                    <h2>Python</h2>
+                </div>
+                <div class="skill-card">
+                    <img src="imgs/skills/css.svg" alt="">
+                    <h2>CSS</h2>
+                </div>
+                <div class="skill-card">
+                    <img src="imgs/skills/git.svg" alt="">
+                    <h2>GIT</h2>
+                </div>
+                <div class="skill-card">
+                    <img src="imgs/skills/html.svg" alt="">
+                    <h2>HTML</h2>
+                </div>
+                <div class="skill-card">
+                    <img src="imgs/skills/js.svg" alt="">
+                    <h2>JavaScript</h2>
+                </div>
+                <div class="skill-card">
+                    <img src="imgs/skills/mysql.svg" alt="">
+                    <h2>MySQL</h2>
+                </div>
+                <div class="skill-card">
+                    <img src="imgs/skills/nodejs.svg" alt="">
+                    <h2>NodeJS</h2>
+                </div>
+                <div class="skill-card">
+                    <img src="imgs/skills/react.svg" alt="">
+                    <h2>ReactJS</h2>
+                </div>
+            </div>
     </section>
     <!--Portfolio Section-->
     <section id="portfolio-section">
         <div id="portfolio">
             <h1>My projects</h1>
+            <div class="cards">
+                <div class="skill-card">
+                    <img src="imgs/skills/mysql.svg" alt="">
+                    <h2>Project1</h2>
+                </div>
+                <div class="skill-card">
+                    <img src="imgs/skills/mysql.svg" alt="">
+                    <h2>Project2</h2>
+                </div>
+                <div class="skill-card">
+                    <img src="imgs/skills/mysql.svg" alt="">
+                    <h2>Project3</h2>
+                </div>
+            </div>
         </div>
     </section>
     <!--Contact Section-->
