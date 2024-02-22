@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Head of html document-->
+
 <head>
+    <script type="application/javascript" src="script.js"></script>
     <!--Indicates webpage character's encoding-->
     <meta charset="UTF-8" />
     <!--Insures responsiveness-->
@@ -11,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <!--Body of html document-->
+
 <body>
     <!--Header of the page-->
     <header>
@@ -20,13 +23,16 @@
             <ul class="menu">
                 <li><a href="#home-section">Home</a> </li>
                 <li><a href="#about-section">About</a> </li>
-                <li><a href="#skills-section">Skills</a>  </li>
+                <li><a href="#skills-section">Skills</a> </li>
                 <li> <a href="#portfolio-section">Projects</a> </li>
                 <li> <a href="#contact-section">Contact</a></li>
-            
+                <li><button id="mode" onclick="switchModeWhite()">☀</button></li>
+                <li><button id="mode" onclick="switchModeDark()">☾</button></li>
+
             </ul>
         </nav>
     </header>
+
     <!--Home Section-->
     <section id="home-section">
         <div id="home">
@@ -36,6 +42,7 @@
                 <p>I'm a professional Software Engineer. <br>
                     I am eager to solve your problems!
                 </p>
+                <button id="resume-btn" onclick="downloadResume()">Download Resume</button>
             </div>
             <div class="image">
                 <img src="/imgs/home-img.png" alt="Anna's image">
@@ -55,40 +62,40 @@
     <!--Skills Section-->
     <section id="skills-section">
         <h1>Skillset</h1>
-            <div class="cards">
-                <div class="skill-card">
-                    <img src="imgs/skills/python.svg" alt="">
-                    <h2>Python</h2>
-                </div>
-                <div class="skill-card">
-                    <img src="imgs/skills/css.svg" alt="">
-                    <h2>CSS</h2>
-                </div>
-                <div class="skill-card">
-                    <img src="imgs/skills/git.svg" alt="">
-                    <h2>GIT</h2>
-                </div>
-                <div class="skill-card">
-                    <img src="imgs/skills/html.svg" alt="">
-                    <h2>HTML</h2>
-                </div>
-                <div class="skill-card">
-                    <img src="imgs/skills/js.svg" alt="">
-                    <h2>JavaScript</h2>
-                </div>
-                <div class="skill-card">
-                    <img src="imgs/skills/mysql.svg" alt="">
-                    <h2>MySQL</h2>
-                </div>
-                <div class="skill-card">
-                    <img src="imgs/skills/nodejs.svg" alt="">
-                    <h2>NodeJS</h2>
-                </div>
-                <div class="skill-card">
-                    <img src="imgs/skills/react.svg" alt="">
-                    <h2>ReactJS</h2>
-                </div>
+        <div class="cards">
+            <div class="skill-card">
+                <img src="imgs/skills/python.svg" alt="">
+                <h2>Python</h2>
             </div>
+            <div class="skill-card">
+                <img src="imgs/skills/css.svg" alt="">
+                <h2>CSS</h2>
+            </div>
+            <div class="skill-card">
+                <img src="imgs/skills/git.svg" alt="">
+                <h2>GIT</h2>
+            </div>
+            <div class="skill-card">
+                <img src="imgs/skills/html.svg" alt="">
+                <h2>HTML</h2>
+            </div>
+            <div class="skill-card">
+                <img src="imgs/skills/js.svg" alt="">
+                <h2>JavaScript</h2>
+            </div>
+            <div class="skill-card">
+                <img src="imgs/skills/mysql.svg" alt="">
+                <h2>MySQL</h2>
+            </div>
+            <div class="skill-card">
+                <img src="imgs/skills/nodejs.svg" alt="">
+                <h2>NodeJS</h2>
+            </div>
+            <div class="skill-card">
+                <img src="imgs/skills/react.svg" alt="">
+                <h2>ReactJS</h2>
+            </div>
+        </div>
     </section>
     <!--Portfolio Section-->
     <section id="portfolio-section">
@@ -114,9 +121,21 @@
     <section id="contact-section">
         <div id="contact">
             <h1>Contact Me</h1>
-            <p><b>email:</b> anna.bosunova001@umb.edu <br>
-            <b>phone:</b> 609-827-5133</p>
+            <h2>Enter your contact details:</h2> <br>
+            <form id="form1" onsubmit="return checkdata()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <br><br>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email">
+                <br><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+
+            </p>
         </div>
+
     </section>
 </body>
 
